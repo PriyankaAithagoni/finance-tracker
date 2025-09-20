@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Personal Finance Tracker</h1>
+    <div class="balance">Balance: ₹<span id="balance">0</span></div>
+    <div class="income">Income: ₹<span id="income">0</span></div>
+    <div class="expense">Expense: ₹<span id="expense">0</span></div>
+
+    <form id="transactionForm">
+      <input type="text" id="text" placeholder="Enter description" required>
+      <input type="number" id="amount" placeholder="Enter amount (+/-)" required>
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

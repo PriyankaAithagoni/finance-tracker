@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.balance {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.income, .expense {
+  display: inline-block;
+  width: 48%;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+.income {
+  background: #d4edda;
+  color: #155724;
+}
+.expense {
+  background: #f8d7da;
+  color: #721c24;
+}
+form {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+form input, form button {
+  padding: 10px;
+  font-size: 16px;
+}
+form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #0056b3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+ul li {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+ul li.income-item {
+  border-left: 6px solid green;
+}
+ul li.expense-item {
+  border-left: 6px solid red;
+}
+canvas {
+  margin-top: 30px;
+}
